@@ -8,23 +8,44 @@ import { useRouter } from "next/router";
 import { Button } from "react-bootstrap";
 
 export default function Home() {
-  const { City, Country, handleChange, handleCountryChange } = useData();
+  const { City, Country, handleChange, handleCountryChange, enableButton, setEnableButton } = useData();
   const router = useRouter();
+  const styling = {
+    backgroundImage: `url('./img2.jpg')`,
+    objectFit: "fill",
+  };
+
   return (
     <>
       <div className="detail">
+        <div style={{ textAlign: "center" }}>
+          <h3>Weather App</h3>
+        </div>
+        {/* <Image src="/img.jpg" alt="page" height="300" width="100" margin-top="100px" margin-left="5px" margin-right="5px" padding-top="30px" /> */}
         <div className="input_form">
           <form>
-            <label className="label_n">
-              City:
-              <input className="inputbox" type="text" onChange={handleChange} />
-            </label>
-            <label className="label_n">
+            <input className="inputbox" type="text" onChange={handleChange} placeholder="Enter City" />
+
+            {/* <label className="label_n">
               Country:
               <input className="inputbox" type="text" onChange={handleCountryChange} />
-            </label>
+            </label> */}
           </form>
-          <Button style={{ marginRight: "30%" }} onClick={() => router.push(`/${City}-${Country}`)}>
+          <Button
+            disabled={enableButton}
+            style={
+              !enableButton
+                ? {
+                    marginRight: "30%",
+                  }
+                : {
+                    cursor: "not-allowed",
+                    disabled: "true",
+                    marginRight: "30%",
+                  }
+            }
+            onClick={() => router.push(`/${City}`)}
+          >
             Submit
           </Button>
         </div>

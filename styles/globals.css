@@ -22,6 +22,7 @@ a {
   background-color: #4361ee;
   border-radius: 10px;
   color: #fff;
+  margin-left: 12px;
   margin-top: 20px;
 }
 .left {
@@ -43,7 +44,10 @@ a {
   position: relative;
   margin: 0 auto;
 }
-
+.weekly__title {
+  margin-top: 30px;
+  padding-left: 20px;
+}
 .weekly__card {
   background-color: #22b0db;
   border-radius: 10px;
@@ -85,18 +89,30 @@ a {
   margin-left: 200px;
 }
 .label_n {
-  margin-left: 20px;
+  margin-left: 64px;
 }
 .inputbox {
   border: 2px solid blue;
   border-radius: 20px;
+  padding-left: 10px;
 }
 .detail {
   margin-top: 100px;
   height: 300px;
   /* padding: 10px 10px 10px 10px; */
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: palegoldenrod;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: blanchedalmond;
   padding-top: 30px;
+}
+.message {
+  margin-top: 10%;
+  margin-left: 30%;
+  padding-left: 10%;
+  padding-top: 10%;
+  margin-right: 20%;
+  padding-bottom: 10%;
+
+  background-image: cadetblue;
+  background-color: skyblue;
 }
