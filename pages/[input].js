@@ -71,9 +71,7 @@ export default function TodayData({ data, weekdata }) {
               </div>
               <div className="today__right-content">
                 <div className="today__icon-wrapper">
-                  <div>
-                    <Image src={`https://openweathermap.org/img/wn/${data?.weather[0]?.icon}@2x.png`} alt="Weather Icon" layout="fill" />
-                  </div>
+                  <Image src={`https://openweathermap.org/img/wn/${data?.weather[0]?.icon}@2x.png`} alt="Weather Icon" layout="fill" />
                 </div>
 
                 <h3>{data?.weather[0]?.description}</h3>

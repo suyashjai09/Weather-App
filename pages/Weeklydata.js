@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 import Image from "next/dist/client/image";
 export default function Weeklydata({ weekdata }) {
-  console.log(weekdata.list);
+  //console.log(weekdata.list);
   return (
     <div className="weekly">
       <h3 className="weekly__title">
@@ -26,9 +26,7 @@ export default function Weeklydata({ weekdata }) {
 
                 <div className="weekly__right-content">
                   <div className="weekly__icon-wrapper">
-                    <div>
-                      <Image src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="Weather Icon" layout="fill" />
-                    </div>
+                    <Image src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="Weather Icon" layout="fill" />
                   </div>
 
                   <h5>{weather.weather[0].description}</h5>
