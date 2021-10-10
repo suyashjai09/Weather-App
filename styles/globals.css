@@ -118,3 +118,8 @@ a {
   background-image: cadetblue;
   background-color: lavender;
 }
+@media screen and (min-width: 800px) {
+  form {
+    width: 80%;
+  }
+}
