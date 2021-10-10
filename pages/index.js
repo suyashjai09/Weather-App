@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import useData from "./hooks/useData";
+import useData from "../hooks/useData";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { useRouter } from "next/router";
@@ -10,10 +10,10 @@ import { Button } from "react-bootstrap";
 export default function Home() {
   const { City, Country, handleChange, handleCountryChange, enableButton, setEnableButton } = useData();
   const router = useRouter();
-  const styling = {
-    backgroundImage: `url('./img2.jpg')`,
-    objectFit: "fill",
-  };
+  // const styling = {
+  //   backgroundImage: `url('./img2.jpg')`,
+  //   objectFit: "fill",
+  // };
 
   return (
     <>
