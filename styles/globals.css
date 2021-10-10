@@ -86,7 +86,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  margin-left: 200px;
+  margin-left: 10%;
 }
 .label_n {
   margin-left: 64px;
@@ -95,6 +95,7 @@ a {
   border: 2px solid blue;
   border-radius: 20px;
   padding-left: 10px;
+  width: 100%;
 }
 .detail {
   margin-top: 100px;

@@ -36,12 +36,14 @@ export default function Home() {
             style={
               !enableButton
                 ? {
-                    marginRight: "30%",
+                    marginRight: "20%",
+                    marginLeft: "5%",
                   }
                 : {
                     cursor: "not-allowed",
                     disabled: "true",
-                    marginRight: "30%",
+                    marginRight: "20%",
+                    marginLeft: "5%",
                   }
             }
             onClick={() => router.push(`/${City}`)}
